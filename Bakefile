@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#
+pagila() {
+    docker build -t sample/pagila pagila
+}
+
+pagila_up() {
+    docker run -p 4432:5432 sample/pagila
+}
