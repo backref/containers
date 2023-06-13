@@ -1,0 +1,7 @@
+version: '3'
+
+tasks:
+  pagila:
+    desc: Builds the pagila image
+    cmds:
+      - docker build -t custom/pagila pagila
